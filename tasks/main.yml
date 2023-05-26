@@ -5,8 +5,6 @@
     section: System Access
     key: PasswordComplexity
     value: 0
-  register: passwordcomplexity
 
-- name: Reboot if disabling password complexity requires it requires it
+- name: Reboot
   win_reboot:
-  when: passwordcomplexity.reboot_required
