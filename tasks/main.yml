@@ -1,0 +1,7 @@
+---
+# tasks file for ansible-role-win-disable-password-complexity
+- name: PasswordPolicy
+  win_security_policy:
+    section: System Access
+    key: PasswordComplexity
+    value: 0
